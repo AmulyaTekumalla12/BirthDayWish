@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background-color: #ffe6f0;
+      padding-top: 100px;
+    }
+
+    h1 {
+      color: #ff3399;
+    }
+
+    #wish {
+      display: none;
+      margin-top: 30px;
+      font-size: 24px;
+      color: #663399;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    button {
+      background-color: #ff66b2;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    button:hover {
+      background-color: #ff3385;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Click Below for a Surprise 🎉</h1>
+  <button onclick="showWish()">Click Me</button>
+
+  <div id="wish">
+    🎂🎈 Happy Birthday Ajay! Wishing you joy, success, and love on your special day! 🎉🎁
+  </div>
+
+  <script>
+    function showWish() {
+      document.getElementById('wish').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
